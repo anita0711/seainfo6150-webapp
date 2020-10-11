@@ -17,7 +17,7 @@ function App() {
       setFetchedData(responseJson);
     };
 
-    if (!fetchedData.length) {
+    if (isEmpty(fetchedData)) {
       fetchData();
     }
     
