@@ -10,3 +10,36 @@
   list-style-type: none;
   padding: 15px;
 }
+
+@supports (display: grid) {
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 150px) {
+  .container {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 30px;
+    gap: 15px;
+    background-color: powderblue;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 800px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 25px;
+    gap: 15px;
+    background-color: lightpink;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 25px;
+    gap: 15px;
+    background: #999;
+  }
+}
