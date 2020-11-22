@@ -1,0 +1,12 @@
+.image {
+  width: 50%;
+  height: auto;
+  border-radius: 50%;
+  border: 10px solid #c00;
+}
+
+.title {
+  color: #c00;
+  margin: 0 0 20px;
+  text-decoration: underline;
+}
